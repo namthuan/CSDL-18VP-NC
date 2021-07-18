@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Products</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/layout/header-main/style.css">
+    <link rel="stylesheet" href="/stylesheets/layout/footer/style.css">
+    <link rel="stylesheet" href="/stylesheets/products/style.css">
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <!--------- container ----------->
+    <div class="container-fuild">
+        
+        <!--------- header ----------->
+        <%- include('../layout/header-main.ejs'); %>
+        
+        <!--------- content----------->
+        
+        <div class='content'>
+            
+            <!-- Thêm code ở đây -->
+            <br/>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                    <!--- filter-sidebar -->
+                        
+                        <div class="filter-sidebar">
+                            
+                            <span>Sắp xếp theo</span>
+                            <a href="#">Liên Quan</a>
+                            <a href="#">Mới nhất</a>
+                            <a href="#">Bán chạy</a>
+                            
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Giá
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Action</button>
+                                    <button class="dropdown-item" type="button">Another action</button>
+                                    <button class="dropdown-item" type="button">Something else here</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    <!--- filter-sidebar -->
+                    <div class="col-md-3"></div>
+                    </div>                    
+                </div>
+                
+                <!---------------------------------------------------------------------------------------------->
+                
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="category"><span >Danh mục</span></div>
+                    </div>
+                    <div class="col-md-9"></div>
+                </div>
+                
+                <!---------------------------------------------------------------------------------------------->
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- menu doc -->
+                        <div id="menu">
+                            <ul>
+                                <li>
+                                    <a href="/products/dienthoai%20maytinhbang">
+                                        <span style="margin-left:3px; margin-right: 10px;">
+                                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Điện Thoại - Máy Tính Bảng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/products/dientu%20dienlanh">
+                                        <span style="margin-left:0px; margin-right: 2px;">
+                                            <i class="fa fa-television" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Điện Tử - Điện Lạnh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right: 6px;">
+                                            <i class="fa fa-headphones" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Phụ Kiện - Thiết Bị Số</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right: 4px;">
+                                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Laptop - Thiết Bị IT</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right: 5px;">
+                                            <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Máy Ảnh - Quay Phim</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:3px; margin-right:9px;">
+                                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                                        </span>    
+                                        <span>Điện Gia Dụng</span>
+                                    </a>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right:6px;">
+                                            <i class="fa fa-umbrella" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Nhà Cửa Đời Sống</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right:6px;">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Hàng Tiêu Dùng - Thực Phẩm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:2px; margin-right:8px;">
+                                            <i class="fa fa-female" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Đồ Chơi, Mẹ & Bé</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right:5px;">
+                                            <i class="fa fa-medkit" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Làm Đẹp - Sức Khỏe</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right:4px;">
+                                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Thời TRang - Phụ Kiện</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right:4px;">
+                                            <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Thể Thao - Dã Ngoại</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:0px; margin-right:3px;">
+                                            <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Xe Máy, Ô Tô, Xe Đạp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span style="margin-left:2px; margin-right:6px;">
+                                            <i class="fa fa-globe" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Hàng Quốc Tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- menu doc -->
+                    </div>
+                    
+                    <div class="col-md-9">
+                        <!-- render products -->
+                        <div class="list-item">
+                            <!------------------------------------------------------------------------------------------->
+                            <% products.forEach((item) => { %>
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="/images/products/khautrang.PNG" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text"><td><%=item.TenSanPham%></td></p>
+                                        
+                                        <div class="evaluate">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            <span class="amount">| 240 sản phẩm</span>
+                                        </div>
+                                        
+                                        <div class="price">
+                                            <span class="reduced-price">200 đ</span>
+                                            <span class="retail-price">150 đ</span>
+                                        </div>
+    
+                                        <a href="#" class="add-to-cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            <% }) %>
+                            <!------------------------------------------------------------------------------------------->
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/images/products/khautrang.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Trà Đen Nguyên Lá Đặc Biệt Dalat Farm - HộpTrà Đen Nguyên Lá Đặc Biệt Dalat Farm - Hộp</p>
+                                    
+                                    <div class="evaluate">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="amount">| 240 sản phẩm</span>
+                                    </div>
+                                    
+                                    <div class="price">
+                                        <span class="reduced-price">200 đ</span>
+                                        <span class="retail-price">150 đ</span>
+                                    </div>
+
+                                    <a href="#" class="add-to-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/images/products/khautrang.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Trà Đen Nguyên Lá Đặc Biệt Dalat Farm - HộpTrà Đen Nguyên Lá Đặc Biệt Dalat Farm - Hộp</p>
+                                    
+                                    <div class="evaluate">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="amount">| 240 sản phẩm</span>
+                                    </div>
+                                    
+                                    <div class="price">
+                                        <span class="reduced-price">200 đ</span>
+                                        <span class="retail-price">150 đ</span>
+                                    </div>
+
+                                    <a href="#" class="add-to-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/images/products/khautrang.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Trà Đen Nguyên Lá Đặc</p>
+                                    
+                                    <div class="evaluate">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="amount">| 240 sản phẩm</span>
+                                    </div>
+                                    
+                                    <div class="price">
+                                        <span class="reduced-price">200 đ</span>
+                                        <span class="retail-price">150 đ</span>
+                                    </div>
+                                    
+                                    <a href="#" class="add-to-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/images/products/khautrang.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Trà Đen Nguyên Lá Đặc Biệt Dalat Farm - HộpTrà Đen Nguyên Lá Đặc Biệt Dalat Farm - Hộp</p>
+                                    
+                                    <div class="evaluate">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="amount">| 240 sản phẩm</span>
+                                    </div>
+                                    
+                                    <div class="price">
+                                        <span class="reduced-price">200 đ</span>
+                                        <span class="retail-price">150 đ</span>
+                                    </div>
+                                    
+                                    <a href="#" class="add-to-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/images/products/khautrang.PNG" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Trà Đen Nguyên Lá Đặc Biệt Dalat Farm - HộpTrà Đen Nguyên Lá Đặc Biệt Dalat Farm - Hộp</p>
+                                    
+                                    <div class="evaluate">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="amount">| 240 sản phẩm</span>
+                                    </div>
+                                    
+                                    <div class="price">
+                                        <span class="reduced-price">200 đ</span>
+                                        <span class="retail-price">150 đ</span>
+                                    </div>
+                                    
+                                    <a href="#" class="add-to-cart">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>Thêm vào giỏ hàng</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- render products --> 
+                    </div>
+                </div>
+                
+                <!-- seen more -->
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <span class="d-flex justify-content-center">
+                            <a class="seen-more" href="#">Xem thêm</a>
+                        </span>
+                    </div>
+                </div>
+                <!-- seen more -->
+            </div>
+            
+        </div> <!--------- end content----------->
+        
+        <!--------- footer ----------->
+        <%- include('../layout/footer.ejs'); %>
+        
+    </div><!--------- end container ----------->
+    
+    <!-- javascript -->
+    <script src="/javascripts/layout/header-main/script.js"></script>
+    <script src="/javascripts/layout/footer/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
